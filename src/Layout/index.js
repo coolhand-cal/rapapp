@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router";
 import ActivityListView from "../views/ActivityListView";
-import CategorySelectView from "../views/word4word/categorySelectView";
 import TriviaView from "../views/triviaView";
 
 function Layout() {
