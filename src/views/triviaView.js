@@ -10,18 +10,22 @@ function TriviaView() {
     <div>
       <Switch>
         <Route path="/word4word/newgame">
-          <p>new game screen here</p>
+          <p>category selection will go here</p>
           <CategorySelectView />
         </Route>
-        <Route path="/word4word/:category">
-          <p>new game screen here</p>
-          <CategorySelectView />
+        <Route path="/word4word/:category/0">
+          <p>
+            Alright this is the kick off The trivia itself will take place here
+          </p>
+        </Route>
+        <Route path="/word4word/:category/:questionId">
+          <p>woah baby</p>
         </Route>
         <Route exact={true} path="/word4word">
           <p>homelyness</p>
+          <CategorySelectView />
         </Route>
       </Switch>
-      <p>Testing</p>
     </div>
   );
 }

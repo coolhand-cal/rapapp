@@ -10,9 +10,13 @@ function ActivityListView() {
   };
   const activity2 = {
     name: "whats Good",
-    location: "",
+    location: "/whatsgood",
   };
-  activities.push(activity1, activity2);
+  const activity3 = {
+    name: "hit me up",
+    location: "/hitmeup",
+  };
+  activities.push(activity1, activity2, activity3);
 
   //function to display individual activity will take an activity and return an activity component
   const DisplayActivty = (activity) => {
@@ -30,7 +34,7 @@ function ActivityListView() {
   //return the view for this component
   return (
     <div className="container">
-      <h3>Activity List Below</h3>
+      <h3>Activity list Below Current is just placeholder</h3>
       <ActivityList />
     </div>
   );

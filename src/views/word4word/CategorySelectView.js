@@ -16,7 +16,7 @@ TODO: Update this component so that it can be reused for sub categories as well
 
   //function to display individual category
   const DisplayCategory = (category) => {
-    const location = `./${category}`;
+    const location = `/word4word/${category}/0`;
     return <Link to={location}>{category} </Link>;
   };
 
